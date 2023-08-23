@@ -47,7 +47,7 @@ export default ({
   .navbar {
     font-size: 2.5rem;
     background-color: #1D1D27;
-    position: sticky;
+    position: fixed;
     z-index: 99999999999999;
     top: 300px;
     width: 100px;
@@ -69,7 +69,7 @@ export default ({
   }
 
   .active {
-    background-color: #0DAB76;
+    background-color: #0A8754;
     border-radius: 50%;
     transform: translateX(20px) scale(1.3);
   }
