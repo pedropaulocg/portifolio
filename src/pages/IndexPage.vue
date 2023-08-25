@@ -549,6 +549,7 @@ export default defineComponent({
 @media all and (max-width: 500px) {
   .dark {
     padding: 20px;
+    height: auto;
   }
   .navbar {
     top: 200px;
