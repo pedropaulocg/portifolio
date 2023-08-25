@@ -379,6 +379,12 @@ export default defineComponent({
   height: 100%;
   object-fit: cover;
 }
+#cardVideo {
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+}
 .typeBar {
   animation: blink 1s;
   animation-iteration-count: infinite;
@@ -441,10 +447,41 @@ export default defineComponent({
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(max(150px, 100% / 4), 2fr));
   overflow: visible;
+  overflow: visible;
 }
 
 .gridIcons i {
   padding: 50px;
+}
+
+.gridIcons i div {
+  overflow: visible;
+}
+
+.gridIcons div {
+  animation: floating 3s;
+  animation-iteration-count: infinite;
+  animation-delay: .8s;
+}
+.gridIcons div:nth-child(odd) {
+  animation-delay: 1s;
+}
+
+.gridIcons div:nth-child(4) {
+  animation-delay: 1s;
+}
+.gridIcons div:nth-child(6) {
+  animation-delay: 2s;
+}
+.gridIcons div:nth-child(8) {
+  animation-delay: 3s;
+}
+.gridIcons div:nth-child(10) {
+  animation-delay: 4s;
+}
+
+.gridIcons div:nth-child(12),.gridIcons div:nth-child(3) {
+  animation-delay: 5s;
 }
 
 .gridIcons i div {
@@ -490,6 +527,7 @@ export default defineComponent({
 .my-card {
   transition: .6s;
   cursor: pointer;
+  cursor: pointer;
 }
 
 .hoveredCard {
@@ -533,6 +571,18 @@ export default defineComponent({
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(0,6px);
+  }
+  100% {
+    transform: translate(0,0);
   }
 }
 
