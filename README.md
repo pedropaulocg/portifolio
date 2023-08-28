@@ -1,6 +1,7 @@
-# Quasar App (portifolio)
+# Portifolio
 
-A Quasar Project
+This is my portifolio. I made it with Vue.JS 3 and quasar. For the email i used the library emailJS. Here is the URL: https://pedropaulocg.surge.sh/#/
+
 
 ## Install the dependencies
 ```bash
@@ -15,19 +16,3 @@ quasar dev
 ```
 
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
